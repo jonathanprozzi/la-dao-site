@@ -1,4 +1,10 @@
-import { Box, Flex, VisuallyHidden, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  VisuallyHidden,
+  Text,
+  Link as ChakraLink,
+} from "@chakra-ui/react";
 import Image from "next/image";
 
 const FooterSection = () => (
@@ -17,17 +23,19 @@ const FooterSection = () => (
         <Text as='span'>Built by Raid Guild</Text>
       </VisuallyHidden>
     </Flex>
-    <Box position='relative' alignItems='center'>
-      <Image
-        alt={`Built by Raid Guild`}
-        width={200}
-        height={80}
-        objectFit='contain'
-        placeholder='blur'
-        blurDataURL='/built-by-rg.png'
-        src='/built-by-rg.png'
-      />
-    </Box>
+    <ChakraLink href='https://raidguild.org' isExternal>
+      <Box position='relative' alignItems='center'>
+        <Image
+          alt={`Built by Raid Guild`}
+          width={200}
+          height={80}
+          objectFit='contain'
+          placeholder='blur'
+          blurDataURL='/built-by-rg.jpg'
+          src='/built-by-rg.jpg'
+        />
+      </Box>
+    </ChakraLink>
   </Flex>
 );
 
