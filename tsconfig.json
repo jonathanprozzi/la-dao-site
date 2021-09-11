@@ -5,6 +5,8 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
+    "downlevelIteration": true,
+
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -16,6 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"]
+    }
   },
   "exclude": ["node_modules"],
   "include": [
@@ -26,6 +29,7 @@
     "src/components/PostModal.js",
     "src/pages/api/photos.js",
     "libs/cloudinary.js",
-    "components/CampaignForm.jsx"
+    "components/CampaignForm.jsx",
+    "pages/raids/index.jsx"
   ]
 }
