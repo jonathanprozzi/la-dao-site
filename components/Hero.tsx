@@ -46,6 +46,7 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
           fill='#fff'
         />
       </svg>
+      <Text display='none'>Test</Text>
     </Flex>
   </Flex>
 );
