@@ -1,6 +1,6 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
-
-// import Service from "./Service";
+import Service from "@/components/Service";
+import { services } from "@/components/_servicesData";
 
 const ServicesSection = () => (
   <Box
@@ -10,16 +10,11 @@ const ServicesSection = () => (
     marginY={16}
     paddingX={{ base: "6", md: "8" }}
   >
-    <Box marginX='auto' maxWidth='5xl' paddingX={{ base: "6", md: "8" }}>
-      <SimpleGrid
-        columns={{ base: 2, md: 2 }}
-        spacingX='10'
-        spacingY={{ base: "8", md: "14" }}
-      >
-        <Box height='200' width='200' bg='gray.800' />
-        <Box height='200' width='200' bg='gray.800' />
-        <Box height='200' width='200' bg='gray.800' />
-        <Box height='200' width='200' bg='gray.800' />
+    <Box marginX='auto'>
+      <SimpleGrid columns={{ base: 2, md: 2 }}>
+        {services.map((service, idx) => (
+          <Service key={idx} name={service.name} image={service.image} />
+        ))}
       </SimpleGrid>
     </Box>
   </Box>
