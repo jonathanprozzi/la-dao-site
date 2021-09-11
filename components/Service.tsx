@@ -17,8 +17,8 @@ const Service = ({ name, image }: ServiceProps) => {
       <Box position='relative'>
         <Image
           alt={`Service: ${name}`}
-          width={200}
-          height={200}
+          width={500}
+          height={500}
           objectFit='cover'
           placeholder='blur'
           blurDataURL={image}

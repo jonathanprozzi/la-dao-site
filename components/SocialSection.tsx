@@ -18,7 +18,7 @@ const SocialSection = () => (
     <Flex direction='column' alignItems='center'>
       <Text
         color='white'
-        fontSize='xl'
+        fontSize={{ base: "xl", lg: "3xl" }}
         lineHeight={7}
         paddingTop={8}
         fontFamily='serif'

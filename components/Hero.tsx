@@ -20,8 +20,11 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
     alignItems='center'
     minWidth='100vw'
     height='100vh'
-    backgroundImage="url('/la-bg-1.png')"
-    backgroundPosition={{ base: "bottom" }}
+    backgroundImage={{
+      base: "url('/la-bg-1.png')",
+      lg: "url('/bg-gradient-top.png')",
+    }}
+    backgroundPosition={{ base: "bottom", lg: "0% 50%" }}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
   >
