@@ -1,4 +1,5 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Flex, HStack, Text } from "@chakra-ui/react";
+import SocialLinks from "@/components/SocialLinks";
 
 const SocialSection = () => (
   <Flex
@@ -24,6 +25,15 @@ const SocialSection = () => (
       >
         join the conversation
       </Text>
+      <Flex
+        width='100%'
+        direction='row'
+        alignItems='center'
+        justifyContent='center'
+        paddingY={20}
+      >
+        <SocialLinks />
+      </Flex>
     </Flex>
   </Flex>
 );
