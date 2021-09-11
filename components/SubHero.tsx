@@ -1,21 +1,16 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Heading } from "@chakra-ui/react";
 
 const SubHero = () => (
   <Flex
     direction='column'
     alignItems='center'
     minWidth='100vw'
-    minHeight={{ base: "10vh", lg: "50vh" }}
-    backgroundImage="url('/abstract-gradient.png'),linear-gradient(rgba(0, 0, 0, 0) @ 0%
-    rgba(0, 0, 0, 0) @ 0.01%
-    rgba(255, 255, 255, 0) @ 0.02%
-    #000000 @ 100%)"
-    backgroundPosition={{ base: "0% 50%" }}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
   >
     <Flex direction='column' alignItems='center'>
-      <Text
+      <Heading
+        as='h2'
         color='white'
         fontSize='xl'
         lineHeight={7}
@@ -23,7 +18,7 @@ const SubHero = () => (
         fontFamily='serif'
       >
         curating creative experiences
-      </Text>
+      </Heading>
     </Flex>
   </Flex>
 );
