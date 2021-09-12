@@ -1,5 +1,7 @@
 import { DefaultSeo } from "next-seo";
 import { ChakraProvider } from "@chakra-ui/react";
+import Head from "next/head";
+
 import SiteLayout from "../components/SiteLayout";
 import Fonts from "../components/Fonts";
 import theme from "../theme";
@@ -7,6 +9,14 @@ import theme from "../theme";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={theme}>
+      <Head>
+        <link
+          rel='preload'
+          href='/fonts/Chapter/Chapter-Regular.otf'
+          as='font'
+          crossOrigin=''
+        />
+      </Head>
       <DefaultSeo
         title='LA DAO'
         description='Lost Ambrer DAO. Events DAO | Globally driven.'
