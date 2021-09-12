@@ -22,19 +22,12 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
     height='100vh'
     backgroundImage={{
       base: "url('/la-bg-1.png')",
-      lg: "url('/gradient-bg-top-scaled.png')",
+      lg: "url('/bg-gradient-top.png')",
     }}
-    backgroundPosition={{ base: "bottom", lg: "bottom" }}
+    backgroundPosition={{ base: "bottom", lg: "0% 80%" }}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
   >
-    <Box
-      width='100vw'
-      minHeight='10vh'
-      background='linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(255, 255, 255, 0) 0.02%, #000000 100%)'
-      opacity='100%'
-      blendMode='multiply'
-    />
     <Flex
       direction='column'
       alignItems='center'
@@ -58,6 +51,13 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
         />
       </chakra.svg>
     </Flex>
+    <Box
+      width='100vw'
+      minHeight='20vh'
+      background='linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(255, 255, 255, 0) 0.02%, #000000 100%)'
+      opacity='100%'
+      blendMode='multiply'
+    />
   </Flex>
 );
 

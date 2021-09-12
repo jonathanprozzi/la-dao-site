@@ -18,7 +18,7 @@ const FooterSection = () => (
       base: "url('/la-bg-2.png')",
       lg: "url('/bg-gradient-bottom-scaled.png')",
     }}
-    backgroundPosition={{ base: "bottom", lg: "top" }}
+    backgroundPosition={{ base: "bottom", lg: "0% 30%" }}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
   >
@@ -35,11 +35,15 @@ const FooterSection = () => (
       </VisuallyHidden>
     </Flex>
     <ChakraLink href='https://raidguild.org' isExternal>
-      <Box position='relative' alignItems='center'>
+      <Box
+        position='relative'
+        alignItems='center'
+        marginBottom={{ base: "0", lg: "10" }}
+      >
         <Image
           alt={`Built by Raid Guild`}
-          width={200}
-          height={80}
+          width={600}
+          height={100}
           objectFit='contain'
           placeholder='blur'
           blurDataURL='/built-by-rg.jpg'
