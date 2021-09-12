@@ -22,6 +22,13 @@ const FooterSection = () => (
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
   >
+    <Box
+      width='100vw'
+      minHeight='10vh'
+      background='linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(255, 255, 255, 0) 0.02%, #000000 100%)'
+      opacity='100%'
+      blendMode='multiply'
+    />
     <Flex direction='column' alignItems='center'>
       <VisuallyHidden>
         <Text as='span'>Built by Raid Guild</Text>
