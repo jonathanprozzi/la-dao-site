@@ -15,7 +15,7 @@ const SubHero = () => (
         fontSize={{ base: "xl", lg: "3xl" }}
         lineHeight={7}
         paddingTop={8}
-        fontFamily='serif'
+        fontFamily='Chapter-Regular'
       >
         curating creative experiences
       </Heading>

@@ -9,11 +9,11 @@ const config = {
 
 const theme = extendTheme({
   config,
-  //   fonts: {
-  //     heading: "",
-  //     body: "",
-  //     mono: "Menlo, monospace",
-  //   },
+  fonts: {
+    heading: "",
+    body: "Chapter-Regular",
+    mono: "Menlo, monospace",
+  },
   colors: {
     // If you want to be able to use colorScheme, use a tool like Smart Swatch and create a
     // palette with a range from 50 - 900

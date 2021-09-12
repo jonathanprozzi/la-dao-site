@@ -21,7 +21,7 @@ const SocialSection = () => (
         fontSize={{ base: "xl", lg: "3xl" }}
         lineHeight={7}
         paddingTop={8}
-        fontFamily='serif'
+        fontFamily='Chapter-Regular'
       >
         join the conversation
       </Text>

@@ -22,9 +22,9 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
     height='100vh'
     backgroundImage={{
       base: "url('/la-bg-1.png')",
-      lg: "url('/bg-gradient-top.png')",
+      lg: "url('/abstract-gradient.png')",
     }}
-    backgroundPosition={{ base: "bottom", lg: "0% 50%" }}
+    backgroundPosition={{ base: "bottom", lg: "100% 50%" }}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
   >
