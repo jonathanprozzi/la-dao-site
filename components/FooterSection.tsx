@@ -14,8 +14,11 @@ const FooterSection = () => (
     justifyContent='space-between'
     minWidth='100vw'
     minHeight={{ base: "50vh", lg: "80vh" }}
-    backgroundImage="url('/la-bg-2.png')"
-    backgroundPosition={{ base: "bottom", lg: "center" }}
+    backgroundImage={{
+      base: "url('/la-bg-2.png')",
+      lg: "url('/bg-gradient-bottom-scaled.png')",
+    }}
+    backgroundPosition={{ base: "bottom", lg: "top" }}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
   >
