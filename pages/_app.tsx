@@ -19,21 +19,21 @@ const MyApp = ({ Component, pageProps }) => {
       </Head>
       <DefaultSeo
         title='LA DAO'
-        description='Lost Ambrer DAO. Events DAO | Globally driven.'
-        canonical='https://site-url'
+        description='Lost Amber DAO. Events DAO | Globally driven.'
+        canonical='https://ladao.club'
         openGraph={{
           type: "website",
           locale: "en_IE",
-          url: "https://site-url",
+          url: "https://ladao.club",
           site_name: "LA DAO",
           title: "LA DAO",
           description: "Lost Amber DAO. Events DAO | Globally driven.",
           images: [
             {
-              url: "/vercel.svg", //replcace with your OG image
+              url: "/LA DAO LOGO BLACK.png", //replcace with your OG image
               width: 1200,
               height: 630,
-              alt: "Alt text for logo",
+              alt: "LA DAO logo",
             },
           ],
         }}
